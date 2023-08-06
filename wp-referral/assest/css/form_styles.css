@@ -1,0 +1,38 @@
+    /* Style for labels */
+    label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    /* Style for form input fields */
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        display: block;
+        margin-bottom: 10px;
+        padding: 5px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    /* Style for the form submit button */
+    input[type="submit"] {
+        display: block;
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+
+    /* Style for the referral code status message */
+    #referral_status {
+        color: red;
+        font-size: 12px;
+    }
