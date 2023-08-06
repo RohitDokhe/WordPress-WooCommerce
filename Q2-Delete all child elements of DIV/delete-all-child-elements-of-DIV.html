@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div id="exercises">
+        <p>PHP Exercises</p>
+        <p>WordPress Exercises</p>
+        <p>Drupal Exercises</p>
+        <p>Python Exercises</p>
+        <p>.NET Exercises</p>
+        <p>Laravel Exercises</p>
+        <p>ReactJS Exercises</p>
+    </div>
+
+    <script>
+        // Step 1: Get a reference to the <div> element
+        const divElement = document.getElementById('exercises');
+
+        // Step 2: Get all child elements of the <div> except the first one
+        const childElements = divElement.querySelectorAll('p:not(:first-child)');
+
+        // Step 3: Remove each child element except the first one
+        childElements.forEach((child) => {
+            divElement.removeChild(child);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+</head>
+
+<body>
+    <div>
+        <p>Apple</p>
+        <p>Orange</p>
+        <p>Banana</p>
+        <p>Kiwi</p>
+        <p>Grapes</p>
+        <p>Mango</p>
+    </div>
+
+    <script>
+        // Step 1: Get a reference to the <div> element
+        const divElement = document.querySelector('div');
+
+        // Step 2: Create a new <p> element
+        const newParagraph = document.createElement('p');
+        newParagraph.textContent = 'Watermelon';
+
+        // Step 3: Append the new <p> element to the <div> element
+        divElement.appendChild(newParagraph);
+    </script>
+</body>
+
+</html>

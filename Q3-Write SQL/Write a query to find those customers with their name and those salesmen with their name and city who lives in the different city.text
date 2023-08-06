@@ -1,0 +1,8 @@
+a.Write a query to find those customers with their name and those salesmen with their
+name and city who lives in the different city.
+
+ans: 
+    SELECT customer.cust_name,
+    salesman.name, salesman.city
+    FROM salesman, customer
+    WHERE salesman.city = customer.city;

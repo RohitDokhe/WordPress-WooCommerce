@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+  <textarea id="textArea" rows="4" cols="50" maxlength="100"></textarea>
+  <p>Word count: <span id="wordCount">0</span></p>
+
+  <script>
+    // Get references to the <textarea> and word count elements
+    const textArea = document.getElementById('textArea');
+    const wordCountSpan = document.getElementById('wordCount');
+
+    // Function to update the word count
+    function updateWordCount() {
+      const text = textArea.value;
+      const wordCount = text.trim().split(/\s+/).filter(Boolean).length;
+      wordCountSpan.textContent = wordCount;
+    }
+
+    // Add event listener for input to the <textarea>
+    textArea.addEventListener('input', function () {
+      const maxLength = parseInt(textArea.getAttribute('maxlength'));
+      const currentLength = textArea.value.length;
+
+      if (currentLength > maxLength) {
+        textArea.value = textArea.value.slice(0, maxLength);
+      }
+
+      updateWordCount();
+    });
+  </script>
+</body>
+
+
+</html>
+
+
